@@ -1,0 +1,12 @@
+.btn-primary {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+
+    color: #DBFFFF;
+    background: rgb(16,34,139);
+    background: linear-gradient(90deg, rgba(16,34,139,1) 7%, rgba(0,212,255,1) 100%);
+    border: none;
+    border-radius: 8px;
+
+}
