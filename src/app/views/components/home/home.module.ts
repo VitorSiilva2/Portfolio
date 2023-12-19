@@ -5,6 +5,7 @@ import { HeaderComponent } from '../../../views/components/template/header/heade
 import { HomeComponent } from './home.component';
 import { BtnPrimaryComponent } from '../../../views/components/btn-primary/btn-primary.component';
 import { MainSectionComponent } from '../../../section/main-section/main-section.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MainSectionComponent } from '../../../section/main-section/main-section
     MainSectionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [],
