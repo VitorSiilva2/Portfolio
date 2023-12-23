@@ -12,8 +12,8 @@ export class GithubService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getRepos(): Observable<HttpResponse<Repository[]>> {
-    return this.httpClient.get<HttpResponse<Repository[]>>(GITHUB_API_GITHUB)
+  getRepos(): Observable<Repository[]> {
+    return this.httpClient.get<Repository[]>(GITHUB_API_GITHUB)
   }
 
 }

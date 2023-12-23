@@ -1,0 +1,29 @@
+<section>
+  <div class="main-content">
+    <span>Projects</span>
+  </div>
+</section>
+
+<div class="card-container">
+  <ng-container *ngFor="let repository of (showAllProjects ? repositories : repositories.slice(0, 4)); let i = index">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-subtitle>{{ repository.name }}</mat-card-subtitle>
+        <mat-card-title>{{ repository.language }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ repository.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="openRepository(repository.html_url)">Ir</button>
+      </mat-card-actions>
+      <mat-card-footer></mat-card-footer>
+    </mat-card>
+  </ng-container>
+</div>
+
+<div class="button-container" *ngIf="repositories.length > 4">
+  <btn-primary text = "Ver mais" btn-pr class="primary-button" (click)="toggleShowAllProjects()">
+    {{ showAllProjects ? 'Show Less' : 'Show More' }}
+  </btn-primary>
+</div>

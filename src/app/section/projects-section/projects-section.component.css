@@ -1,0 +1,57 @@
+section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  
+    span {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 16px;
+      color: #151717;
+    }
+  }
+  
+  @media (min-width: 1080px) {
+    section {
+      flex-direction: row;
+      justify-content: space-between;
+  
+      .main-content {
+        align-items: flex-start;
+        max-width: 50%;
+      }
+    }
+  
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+  
+    .example-card {
+      width: calc(50% - 20px);
+      margin: 10px;
+    }
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .primary-button {
+    /* Adicione estilos específicos para o botão primário aqui, se necessário */
+  }
+  
