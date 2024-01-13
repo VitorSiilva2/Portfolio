@@ -4,7 +4,7 @@ section {
     align-items: center;
     justify-content: center;
 
-    margin-top: 80px;
+    margin-top: 30px;
 
     .main-content {
         display: flex;
@@ -14,27 +14,33 @@ section {
 
         span {
             text-transform: uppercase;
-            font-weight: 600;
-            font-size: 16px;
-            color: #151717;
+            font-weight: 1000;
+            font-size: 25px;
+            color: #ffffff;
+            margin-bottom: 20px;
         }
         h1{
-            background: rgb(16,34,139);
-            background: linear-gradient(90deg, rgba(16,34,139,1) 7%, rgba(0,212,255,1) 100%);
+             background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgb(4, 187, 141) 7%, rgb(9, 248, 81) 100%);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent; 
             display: inline-block;
             font-size: 40px;
             margin: 0;
+            margin-bottom: 10px;
            
           }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
     } 
     }
 
 @media (min-width: 1080px) {
-    svg {
-        width: 350px;
-    }
+    
 
     section {
         flex-direction: row;
@@ -43,15 +49,23 @@ section {
         .main-content {
             align-items: flex-start;
             max-width: 50%;
+
+        
+        }
+
+        .imgprinc {
+            width: 500px;
+        }
+
+        h1 {
+            font-size: 56px;
         }
     }
 
-    h1 {
-        font-size: 56px;
-    }
+  
 }
     
 
-svg {
+.imgprinc {
     width: 298px;
 }

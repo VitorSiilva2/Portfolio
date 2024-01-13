@@ -2,5 +2,6 @@
     name: string,
     description: string,
     html_url: string,
-    language: string
+    languages_url: string
+    languages?: string[];
  }

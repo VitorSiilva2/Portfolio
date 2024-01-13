@@ -8,6 +8,10 @@ import { MainSectionComponent } from '../../../section/main-section/main-section
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ProjectsSectionComponent } from '../../../section/projects-section/projects-section.component';
 import {MatCardModule} from '@angular/material/card';
+import { ContactSectionComponent } from '../../../section/contact-section/contact-section.component';
+import { SkillsSectionComponent } from '../../../section/skills-section/skills-section.component';
+import {SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 
 
@@ -19,16 +23,19 @@ import {MatCardModule} from '@angular/material/card';
     HomeComponent,
     BtnPrimaryComponent,
     MainSectionComponent,
-    ProjectsSectionComponent    
+    ProjectsSectionComponent,
+    ContactSectionComponent,
+    SkillsSectionComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    SlickCarouselModule
 
   ],
   providers: [],
-  bootstrap: [],
+  bootstrap: [HomeComponent],
   exports: [
     HomeComponent
   ]

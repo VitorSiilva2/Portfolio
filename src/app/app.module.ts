@@ -5,12 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HomeModule } from './views/components/home/home.module';
-import { ContactSectionComponent } from './section/contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactSectionComponent,
     
   ],
   imports: [

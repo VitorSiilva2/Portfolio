@@ -1,0 +1,28 @@
+.slick-prev::before, .slick-next::before {
+    color: black !important;
+}
+
+.img-style {
+    margin-top: 20px ;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 40px;
+
+}
+
+
+@media (min-width: 1080px) {
+    .img-style {
+        margin-top: 20px ;
+        margin-left: 80px !important;
+        margin-right: 50px !important; 
+        height: 100px;
+        width: 100px;
+    }
+    .carousel{
+        margin-right: 120px;
+        margin-left: 120px;
+    }
+
+}

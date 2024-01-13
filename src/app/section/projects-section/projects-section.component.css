@@ -13,13 +13,26 @@ section {
     justify-content: center;
     gap: 12px;
   
+  
     span {
       text-transform: uppercase;
       font-weight: 600;
       font-size: 16px;
-      color: #151717;
+      color: #ffffff;
     }
   }
+    .mat-elevation-z4 {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    
+  }
+
+    
+  .card {
+    margin: 10px;
+  }
+  
   
   @media (min-width: 1080px) {
     section {
@@ -31,17 +44,45 @@ section {
         max-width: 50%;
       }
     }
+    
   
-    .card-container {
+    .mat-elevation-z4 {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 30px;
+      background-color: rgba(43, 43, 43, 0.541);
+      border-radius: 3%;
+
+    }
+    mat-card-subtitle {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #ffffff
+    }
+
+    .languages_span{
+      font-size: 15px;
+      margin-right: 10px;
+      border-radius: 20%;
+      background-color:  rgb(9, 248, 81);
+
+    }
+
+    mat-card-content {
+      color: #ffffff;
+      font-family:'Times New Roman', Times, serif;
     }
   
-    .example-card {
+    .card {
       width: calc(50% - 20px);
       margin: 10px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
     }
   }
   
@@ -50,8 +91,3 @@ section {
     justify-content: center;
     margin-top: 20px;
   }
-  
-  .primary-button {
-    /* Adicione estilos específicos para o botão primário aqui, se necessário */
-  }
-  
