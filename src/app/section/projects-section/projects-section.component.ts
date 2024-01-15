@@ -29,7 +29,9 @@ export class ProjectsSectionComponent implements OnInit {
       })
     ).subscribe(
       (data) => {
-        this.repositories = data;
+        //this.repositories = data;
+        const allowedRepositoryNames = ['PeopleManager', 'StorageSystem', 'TalkieMessage', 'NetflixRemake'];
+        this.repositories = data.filter(repo => allowedRepositoryNames.includes(repo.name));
       }
     );
       }

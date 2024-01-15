@@ -11,11 +11,20 @@
 
 }
 
+span {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
 
 @media (min-width: 1080px) {
     .img-style {
         margin-top: 20px ;
-        margin-left: 80px !important;
+        margin-left: 100px !important;
         margin-right: 50px !important; 
         height: 100px;
         width: 100px;
