@@ -29,13 +29,14 @@ section {
             font-size: 40px;
             margin: 0;
             margin-bottom: 10px;
+            text-align: right;
           }
           
         p{
             font-weight: 400;
             font-size: 16px;
             color: #ffffff;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     } 
     }
